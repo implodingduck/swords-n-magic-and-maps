@@ -32,7 +32,10 @@ jobs:
         working-directory: app
       - run: CI=false npm run build
         working-directory: app
-      - run: npm run deploy
+      - run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          npm run deploy
         working-directory: app
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
