@@ -11,11 +11,12 @@ const Map = () => {
                 zoom={1}
                 style={ { height: height + "px" } }
                 minZoom={0}
+                maxZoom={3}
                 maxNativeZoom={3}
             >
                 <TileLayer
                 attribution='Map From Kindred Games: Swords n Magic and Stuff'
-                url="https://implodingduck.github.io/swords-n-magic-and-maps/tiles/{z}/{x}/{y}.png"
+                url="https://implodingduck.github.io/swords-n-magic-and-maps/tiles/{z}/{y}/{x}.png"
                 />
             </MapContainer>
         </div>
