@@ -11,7 +11,7 @@ https://implodingduck.github.io/swords-n-magic-and-maps/
 conda create -n gdal
 conda activate gdal
 conda install -c conda-forge gdal
-gdal2tiles.py swords-n-magic-and-maps.tif -p raster 
+gdal2tiles.py swords-n-magic-and-maps.tif ./app/public/tiles -p raster 
 ```
 
 ## Resources

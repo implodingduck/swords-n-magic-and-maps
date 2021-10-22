@@ -1,0 +1,18 @@
+{ 
+    "type": "FeatureCollection",
+    "features": [
+        { "type": "Feature",
+            "geometry": {"type": "Point", "coordinates": [0, 0]},
+            "properties": {"description": "zero zreo"}
+        },
+        { "type": "Feature",
+            "geometry": {"type": "Point", "coordinates": [ -102.65625000000001, -83.81102365639774]},
+            "properties": {"description": "New character starting point"}
+        },
+        {
+            "type": "Feature",
+            "geometry": {"type": "Point", "coordinates": [157.42584228515628, 9.73612839582732]},
+            "properties": {"description": "top right corner"}
+        }
+    ]
+}
