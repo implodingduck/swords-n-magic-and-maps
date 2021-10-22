@@ -3,8 +3,8 @@
       <Title>swords-n-magic-and-maps.tif</Title>
       <Abstract></Abstract>
       <SRS></SRS>
-      <BoundingBox minx="0.00000000000000" miny="-1080.00000000000000" maxx="1920.00000000000000" maxy="0.00000000000000"/>
-      <Origin x="0.00000000000000" y="-1080.00000000000000"/>
+      <BoundingBox minx="0.00000000000000" miny="-1317.00000000000000" maxx="1920.00000000000000" maxy="0.00000000000000"/>
+      <Origin x="0.00000000000000" y="-1317.00000000000000"/>
       <TileFormat width="256" height="256" mime-type="image/png" extension="png"/>
       <TileSets profile="raster">
         <TileSet href="0" units-per-pixel="8.00000000000000" order="0"/>
