@@ -34,7 +34,7 @@ const Map = () => {
         layer.bindPopup(`<div class="featurepopup">${JSON.stringify(feature.properties)}</div>`)
     }
     return (
-        <div className="map__container" style={ { border: "1px solid #ff00ff" } }>
+        <div className="map__container">
             <MapContainer
                 center={defaultPosition}
                 zoom={3}

@@ -6,12 +6,12 @@
             "properties": {"description": "zero zreo"}
         },
         { "type": "Feature",
-            "geometry": {"type": "Point", "coordinates": [ -102.65625000000001, -83.81102365639774]},
+            "geometry": {"type": "Point", "coordinates": [ -83.40820312500001, -83.87230896636571]},
             "properties": {"description": "New character starting point"}
         },
         {
             "type": "Feature",
-            "geometry": {"type": "Point", "coordinates": [157.42584228515628, 9.73612839582732]},
+            "geometry": {"type": "Point", "coordinates": [157.41210937500003, 45.644768217751924]},
             "properties": {"description": "top right corner"}
         }
     ]
