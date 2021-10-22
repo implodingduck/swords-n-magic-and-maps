@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/swords-n-magic-and-maps/static/css/main.a617e044.chunk.css",
-    "main.js": "/swords-n-magic-and-maps/static/js/main.19b00984.chunk.js",
-    "main.js.map": "/swords-n-magic-and-maps/static/js/main.19b00984.chunk.js.map",
+    "main.js": "/swords-n-magic-and-maps/static/js/main.a6bec898.chunk.js",
+    "main.js.map": "/swords-n-magic-and-maps/static/js/main.a6bec898.chunk.js.map",
     "runtime-main.js": "/swords-n-magic-and-maps/static/js/runtime-main.7bff2f29.js",
     "runtime-main.js.map": "/swords-n-magic-and-maps/static/js/runtime-main.7bff2f29.js.map",
     "static/css/2.da98c186.chunk.css": "/swords-n-magic-and-maps/static/css/2.da98c186.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.da98c186.chunk.css",
     "static/js/2.48fb22cb.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.19b00984.chunk.js"
+    "static/js/main.a6bec898.chunk.js"
   ]
 }
