@@ -34,3 +34,5 @@ jobs:
         working-directory: app
       - run: npm run deploy
         working-directory: app
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
