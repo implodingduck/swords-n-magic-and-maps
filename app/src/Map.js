@@ -10,6 +10,8 @@ const Map = () => {
                 center={defaultPosition}
                 zoom={1}
                 style={ { height: height + "px" } }
+                minZoomLevel={0}
+                maxZoomLevel={3}
             >
                 <TileLayer
                 attribution='Map From Kindred Games: Swords n Magic and Stuff'
