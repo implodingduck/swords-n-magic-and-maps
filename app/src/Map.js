@@ -80,7 +80,7 @@ const Map = () => {
                 style={ { height: height + "px", backgroundColor: "#e7bb8c" } }
             >
                 <TileLayer
-                attribution='Map From Kindred Games: Swords n Magic and Stuff'
+                attribution='Map From Kindred Games: <a href="https://store.steampowered.com/app/810040/Swords_n_Magic_and_Stuff/">Swords n Magic and Stuff</a>'
                 url="https://implodingduck.github.io/swords-n-magic-and-maps/tiles/{z}/{x}/{y}.png"
                 minZoom={0}
                 maxNativeZoom={3}
