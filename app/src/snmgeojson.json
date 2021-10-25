@@ -3,21 +3,49 @@
     "features": [
         { "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [0, 0]},
-            "properties": {"description": "zero zreo"}
+            "properties": {
+                "description": "zero zreo",
+                "type": "npc"
+            }
         },
         { "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [ -83.40820312500001, -83.87230896636571]},
-            "properties": {"description": "New character starting point"}
+            "properties": {
+                "description": "New character starting point",
+                "type": "location"
+            }
         },
         {
             "type": "Feature",
-            "geometry": {"type": "Point", "coordinates": [157.41210937500003, 45.644768217751924]},
-            "properties": {"description": "top right corner"}
+            "geometry": {"type": "Point", "coordinates": [-54.93164062500001, -72.67268149675316]},
+            "properties": {
+                "description": "Hope Harbor",
+                "type": "location"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {"type": "Point", "coordinates": [-130.34179687500003, -39.740986355883564] },
+            "properties": {
+                "description": "Ramshackle",
+                "type": "location"
+            }
         },
         {
             "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [-132.53906250000003, -50.930738023718185]},
-            "properties": {"description": "Lava Caves"}
+            "properties": {
+                "description": "Lava Caves",
+                "type": "location"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {"type": "Point", "coordinates":[22.67578125, -72.20867825343294]},
+            "properties": {
+                "description": "Astronomer",
+                "type": "npc"
+            }
         }
     ]
 }

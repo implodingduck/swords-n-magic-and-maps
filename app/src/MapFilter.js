@@ -13,7 +13,6 @@ const MapFilter = (  ) => {
     const handleFilter = (e) => {
         setFilter(e.target.value)
         map.eachLayer(function(layer){
-            console.log(layer)
             if (layer.feature ){
                 if (layer.feature.properties.description.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1){
                     layer.setOpacity(1)

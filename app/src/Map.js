@@ -22,6 +22,21 @@ L.Icon.Default.mergeOptions({
     shadowUrl: markerShadow,
 })
 
+const npcIcon = L.icon({
+    iconUrl: '/swords-n-magic-and-maps/npc.png',
+    iconSize:     [25, 35], // size of the icon
+    iconAnchor:   [12, 34], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+const locationIcon = L.icon({
+    iconUrl: '/swords-n-magic-and-maps/location.png',
+    iconSize:     [25, 35], // size of the icon
+    iconAnchor:   [12, 34], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, -35] // point from which the popup should open relative to the iconAnchor
+});
+
+
 const Map = () => {
     const defaultPosition = [-60 ,-30]; 
     const { height, width } = useWindowDimensions();
@@ -32,7 +47,13 @@ const Map = () => {
         //console.log('handlePointToLayer')
         //console.log(feature)
         if ( (filterValue === undefined)  || filterValue.length === 0 || feature.properties.description.indexOf(filterValue) > -1 ){
-            return L.marker(latlng);
+            switch(feature.properties.type){
+                case "npc":
+                    return L.marker(latlng, {icon: npcIcon});
+                default:
+                    return L.marker(latlng, {icon: locationIcon});
+            }
+            
         }
         
     }
@@ -40,6 +61,7 @@ const Map = () => {
     const handleEachFeature = (feature, layer) =>{
         //console.log(feature)
         layer.bindPopup(`<div class="featurepopup">${JSON.stringify(feature.properties)}</div>`)
+        layer.bindTooltip(feature.properties.description, { permanent: false, direction: 'top', offset: [0, -32] }).openTooltip();
     }      
 
 
