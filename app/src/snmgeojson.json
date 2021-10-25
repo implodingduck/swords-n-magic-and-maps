@@ -13,6 +13,11 @@
             "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [157.41210937500003, 45.644768217751924]},
             "properties": {"description": "top right corner"}
+        },
+        {
+            "type": "Feature",
+            "geometry": {"type": "Point", "coordinates": [-132.53906250000003, -50.930738023718185]},
+            "properties": {"description": "Lava Caves"}
         }
     ]
 }
