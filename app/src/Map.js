@@ -1,6 +1,7 @@
 import { MapContainer, TileLayer, GeoJSON, Popup } from "react-leaflet";
 import { Icon } from "leaflet";
 import { useState } from "react"
+import {isMobile} from 'react-device-detect';
 
 import useWindowDimensions from "./UseWindowDimensions";
 
@@ -26,6 +27,7 @@ const npcIcon = L.icon({
     iconUrl: '/swords-n-magic-and-maps/npc.png',
     iconSize:     [25, 35], // size of the icon
     iconAnchor:   [12, 34], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, -35] 
     //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -60,7 +62,10 @@ const Map = () => {
 
     const handleEachFeature = (feature, layer) =>{
         //console.log(feature)
-        layer.bindPopup(`<div class="featurepopup">${JSON.stringify(feature.properties)}</div>`)
+        if(!isMobile){
+            layer.bindPopup(`<div class="featurepopup">${JSON.stringify(feature.properties)}</div>`)
+        }
+        
         layer.bindTooltip(feature.properties.description, { permanent: false, direction: 'top', offset: [0, -32] }).openTooltip();
     }      
 
