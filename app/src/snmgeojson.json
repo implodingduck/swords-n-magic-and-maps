@@ -5,7 +5,7 @@
             "geometry": {"type": "Point", "coordinates": [0, 0]},
             "properties": {
                 "description": "zero zreo",
-                "type": "npc"
+                "type": "location"
             }
         },
         { "type": "Feature",
@@ -46,6 +46,16 @@
                 "description": "Astronomer",
                 "type": "npc"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {"type": "Point", "coordinates": [-84.06738281250001, -66.80922097449334]},
+            "properties": {
+                "description": "Rodrick",
+                "type": "npc"
+            }
         }
+
+        
     ]
 }
